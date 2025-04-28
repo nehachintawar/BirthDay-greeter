@@ -16,13 +16,16 @@ const Page = () => {
     }
   }, [router])
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (email.length > 5 && password.length > 5) {
       if(isUserExist({email : email, password : password})){
         console.log("logged in")
         login();
         router.push('/')
+      }
+      else{
+        alert("User Does not registered!")
       }
     }
   }
@@ -51,7 +54,7 @@ const Page = () => {
           <p className="text-gray-400 text-sm mb-6">or use your account</p>
 
           {/* Form */}
-          <form className="flex flex-col w-full max-w-sm space-y-4">
+          <form className="flex flex-col w-full max-w-sm space-y-4" onSubmit={handleSubmit}>
             <input
               type="email"
               placeholder="Email"
@@ -72,7 +75,6 @@ const Page = () => {
             <button
               type="submit"
               className="bg-gradient-to-r from-red-500 to-orange-400 text-white py-2 rounded-full font-semibold hover:opacity-90 transition"
-              onClick={handleSubmit}
             >
               SIGN IN
             </button>

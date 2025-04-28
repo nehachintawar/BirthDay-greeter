@@ -64,7 +64,7 @@ const Page = () => {
           <p className="text-gray-400 text-sm mb-6">or use your email for registration</p>
 
           {/* Form */}
-          <form className="flex flex-col w-full max-w-xs space-y-4">
+          <form className="flex flex-col w-full max-w-xs space-y-4" onSubmit={handleSignup}>
             <input
               type="text"
               placeholder="Name"
@@ -86,7 +86,6 @@ const Page = () => {
             <button
               type="submit"
               className="bg-gradient-to-r from-red-500 to-orange-400 text-white py-2 rounded-full font-semibold hover:opacity-90 transition"
-              onClick={handleSignup}
             >
               SIGN UP
             </button>

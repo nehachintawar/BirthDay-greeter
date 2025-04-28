@@ -18,7 +18,8 @@ const Page = () => {
   
   return (
     <div>
-    {isFirstTimeLogin() ? <BirthdayPage /> : <h1> Welcome Back </h1>}
+    {/* {isFirstTimeLogin() ? <BirthdayPage /> : <h1> Welcome Back </h1>} */}
+    <BirthdayPage />
     </div>
   );
 }

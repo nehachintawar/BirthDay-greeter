@@ -30,7 +30,7 @@ const Page = () => {
         {/* Text content */}
         <div className="mt-16">
           <p className="text-gray-600">Hey</p>
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">Katie,</h2>
+          <h2 className="text-2xl font-bold text-gray-800 mb-4">Girl,</h2>
           <h1 className="text-3xl font-bold text-blue-800 mb-2">Happy Birthday</h1>
           <p className="text-blue-700 mb-6">May all your wishes come true</p>
           <p className="text-gray-600">from Neha</p>
@@ -38,15 +38,15 @@ const Page = () => {
 
         {/* Bottom decorations */}
         <div className="absolute bottom-0 left-0 p-4">
-          <img src="/party-popper.png" alt="Party Popper" className="w-12 h-12" />
+          <img src="/image/party_popper.png" alt="Party Popper" className="w-12 h-12" />
         </div>
 
         <div className="absolute bottom-0 right-0 p-4">
-          <img src="/party-popper.png" alt="Party Popper" className="w-12 h-12" />
+          <img src="/image/party_popper.png" alt="Party Popper" className="w-12 h-12" />
         </div>
 
         <div className="mt-8">
-          <img src="/birthday-cake.png" alt="Birthday Cake" className="mx-auto w-32" />
+          <img src="/image/birthday_cake.png" alt="Birthday Cake" className="mx-auto w-32" />
         </div>
 
       </div>
