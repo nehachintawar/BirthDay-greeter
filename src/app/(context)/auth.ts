@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 'use client';
+=======
+export const login = () => {
+    localStorage.setItem('isLoggedIn', 'true');
+    localStorage.setItem('firstTimeLogin', 'false')
+};
+>>>>>>> 817e6ab (recent update)
 
 export const login = () => {
     if (typeof window !== 'undefined') {

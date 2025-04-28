@@ -38,6 +38,7 @@ const Page = () => {
 
         {/* Bottom decorations */}
         <div className="absolute bottom-0 left-0 p-4">
+
           <img src="/image/party_popper.png" alt="Party Popper" className="w-12 h-12" />
         </div>
 
@@ -47,6 +48,17 @@ const Page = () => {
 
         <div className="mt-8">
           <img src="/image/birthday_cake.png" alt="Birthday Cake" className="mx-auto w-32" />
+=======
+          <img src="/img/party_popper.png" alt="Party Popper" className="w-12 h-12" />
+        </div>
+
+        <div className="absolute bottom-0 right-0 p-4">
+          <img src="/img/party_popper.png" alt="Party Popper" className="w-12 h-12" />
+        </div>
+
+        <div className="mt-8">
+          <img src="/img/birthday_cake.png" alt="Birthday Cake" className="mx-auto w-32" />
+
         </div>
 
       </div>
